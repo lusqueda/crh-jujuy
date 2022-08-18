@@ -7,7 +7,7 @@
     <title>Proyecto Final</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <main class="wrapper">
@@ -16,16 +16,13 @@
                 <header class="header">
                     <ul class="icons">
                         <li><a class="icon" href="#"><span class="fa-stack">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-twitter fa-stack-1x"></i>
+                            <i class="fa fa-twitter fa-stack-2x"></i>
                           </span></a></li>
                         <li><a class="icon" href="#"><span class="fa-stack">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-instagram fa-stack-1x"></i>
+                            <i class="fa fa-instagram fa-stack-2x"></i>
                           </span></a></li>
                         <li><a class="icon" href="#"><span class="fa-stack">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-facebook fa-stack-1x"></i>
+                            <i class="fa fa-facebook fa-stack-2x"></i>
                           </span></a></li>
                     </ul>
                 </header>
@@ -42,9 +39,7 @@
                             <li><a href="#" class="button big">Ampliar</a></li>
                         </ul>
                     </div>
-                    <div class="image">
-                        <img src="img/example.png" alt="Imagen" />
-                    </div>
+                    <a data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1300" href="#" class="image"><img src="img/example.png" alt="Imagen" /></a>
                 </section>
                 <!--Seccion 2-->
                 <section class="fts">
@@ -89,7 +84,8 @@
                     </header>
                     <div class="posts">
                         <article>
-                            <a href="#" class="image"><img src="img/example.png" alt="imagen" /></a>
+                            <a data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1300" href="#" class="image">
+                                <img src="img/example.png" alt="imagen" /></a>
                             <h3>Subtitulo Contenido</h3>
                             <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                             <ul class="actions">
@@ -97,7 +93,8 @@
                             </ul>
                         </article>
                         <article>
-                            <a href="#" class="image"><img src="img/example.png" alt="imagen" /></a>
+                            <a data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1300"href="#" class="image">
+                                <img src="img/example.png" alt="imagen" /></a>
                             <h3>Subtitulo Contenido</h3>
                             <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                             <ul class="actions">
@@ -105,7 +102,8 @@
                             </ul>
                         </article>
                         <article>
-                            <a href="#" class="image"><img src="img/example.png" alt="imagen" /></a>
+                            <a data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1300" href="#" class="image">
+                                <img src="img/example.png" alt="imagen" /></a>
                             <h3>Subtitulo Contenido</h3>
                             <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                             <ul class="actions">
@@ -154,6 +152,10 @@
                 </footer>
             </div>
         </div>   
-    </main>     
+    </main>   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>   
 </body>
 </html>
