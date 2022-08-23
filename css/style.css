@@ -91,8 +91,8 @@ h3 {
 }
 .main .inner {
     padding: 0 5em 0.1em 5em ;
-    margin: 0 auto;
-    max-width: 110em; 
+    margin: 0;
+    max-width: 140em; 
 }
 .main .inner section {
     padding: 3em 0 3em 0 ;
@@ -113,6 +113,9 @@ h3 {
 }
 .header .icons {
     text-align: right; 
+}
+.header .icons i {
+    color: #f56a6a;
 }
 i.fa-twitter  {
     -moz-transition: -moz-transform 0.7s ease;
@@ -164,9 +167,6 @@ header.major {
     margin: 0 0 2em 0;
     padding: 0 0.75em 0.5em 0; 
 } 
-.features .fa {
-    font-size: 6em;
-}
 
 /* Icon */
 .icon {
@@ -212,6 +212,7 @@ a.image img {
     -webkit-transition: -webkit-transform 0.2s ease;
     -ms-transition: -ms-transform 0.2s ease;
     transition: transform 0.2s ease; 
+    width: 100%;        
 }
 a.image:hover img {
     -moz-transform: scale(1.075);
@@ -278,59 +279,6 @@ ul.icons li {
     background-color: #f56a6a; 
 } 
 
-/* Features */
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 -2em -3em;
-    width: calc(100% + 3em); 
-}
-.features article {
-    align-items: center;
-    display: flex;
-    margin: 0 0 3em 3em;
-    position: relative;
-    width: calc(50% - 3em); 
-}
-.features article .icon {
-    flex-grow: 0;
-    flex-shrink: 0;
-    display: block;
-    height: 10em;
-    line-height: 10em;
-    margin: 0 2em 0 0;
-    text-align: center;
-    width: 10em;
-}
-.features article .content {
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 100%; 
-}
-
-/* Posts */
-.posts {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 2em -6em;
-    width: calc(100% + 6em); 
-}
-.posts article {
-    flex-grow: 0;
-    flex-shrink: 1;
-    margin: 0 0 6em 6em;
-    position: relative;
-    width: calc(33.33333% - 6em); 
-}
-.posts article .image {
-    display: block;
-    margin: 0 0 2em 0; 
-}
-.posts article .image img {
-    display: block;
-    width: 100%; 
-}
-
 /* Sidebar */
 .sidebar {
     grid-area: sidebar;
@@ -349,25 +297,27 @@ ul.icons li {
     position: relative;
     width: 20em; 
 }
-.sidebar .inner {
-    margin: 0 0 3.5em 0;
-    padding: 0 0 3.5em 0; 
-}
-.sidebar > .inner > .alt {
-    background-color: #eff1f2;
-    border-bottom: 0;
-    margin: -2.22222em 0 4.44444em -2.22222em;
-    padding: 2.22222em;
-    width: calc(100% + 4.44444em); 
-}
-.sidebar.inactive {
-    margin-left: -26em; 
-}
 .logos .alt {
     color: inherit;
     font-family: "Roboto Slab", serif;
     size-adjust: 20px; 
     width: calc(100% + 0em)
+}
+
+/* SidebarNav */
+.sidebarNav {
+    background-color: #f5f6f7;
+    font-size: 0.9em;
+    position: relative;
+    width: 23em; 
+}
+.sidebarNav h2 {
+    font-size: 1.38889em; 
+}
+.sidebarNav > .inner > * {
+    padding: 0.9em 0.22222em 0.22222em 0em ;
+    position: relative;
+    width: 20em; 
 }
 
 /* Menu */
@@ -405,7 +355,6 @@ ul.icons li {
     position: relative; 
 }
 
-
 /* Contact */
 .sidebar .inner section{
     text-decoration: none;
@@ -430,7 +379,7 @@ ul.contact li a {
     padding-left: 0.5em;
 }
 ul.contact i {
-    color:  #f56a6a; ;
+    color:  #f56a6a; 
     font-size: 25px;
 }
 
@@ -456,145 +405,59 @@ ul.contact a {
  }
 
 /* Form */
-.donacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.donacion form {
-    font-size: 1.5em;
+form {
+    font-size: 0.9em;
     line-height: 2em;
-    text-align: left;
     margin-top: 0em;
 }
-.donacion form fieldset{
+form fieldset{
     border:3px solid #f56a6a;
     box-shadow: 0 0 12px #f56a6a;
     padding: 1.5em  0  0  2em;
     border-radius: 1em;
     height: 100%;
 }
-.donacion form div input {
-    height: 2em;
-    line-height: 2em;
-    width: 70%;
-    color: black;
-    border-radius: 0.6em;
-    opacity: 0.525;
-    margin-bottom: 1.5em;
-    
-}
 input:focus {
     outline: none !important;
-    border:2px solid #f56a6a;
-    box-shadow: 0 0 12px #f56a6a;
-  }
-
-.donacion form div label {
-    font-style: normal;
-    font-weight: 100; 
-    font-size: 0.63em;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 100; 
-    margin-bottom: -20em;
-}
-.donacion form button {
-    font-style: normal;
-    font-variant: normal;
-    font-size: 0.53em;
-    font-family: 'Font Awesome 5 Free';
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 900; 
-    margin-top: 1em;
-    margin-left: -4em;
-}
-.donacion ul {
-    justify-content: center;
-}
-.donacion form input[type="checkbox"] {
-    height: 2em;
-    line-height: 2em;
-    border-radius: 0.6em;
-    opacity: 0.5;
-    width: 10%;
-}
-.donacion form fieldset div h2 {
-    align-content: center;
-}
-.donacion form fieldset div {
-    padding-bottom: -0em;
-}
-
-/* Historia */
-.historia {
-    padding: 6em 0 4em 0 ;
-    display: flex; 
-    flex-wrap: wrap;
-}
-.historia h1 {
-    margin-top: -0.125em; 
-}
-.historia .content {
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 30%; 
-}
-.historia .image {
-    display: block;
-    margin: 0 0 2em 2em;
-    width: 55%; 
-}
-.historia .image img {
-    height: 100%;
-    width: 100%; 
+    border:2px solid #f56a6a !important;
+    box-shadow: 0 0 12px #f56a6a !important;
 }
 
 /* F.A.Q. */
-.preguntas {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0 0 -2em -3em;
-    width: 90%; 
-}
-.preguntas article {
+
+article {
     align-items: center;
-    margin: 0 0 3em 3em;
+    margin: 0 0 2em 0em;
     border-bottom: solid 2px rgba(210, 215, 217, 0.75);
 }
 
-.preguntas article .content {
-    flex-grow: 3;
-    flex-shrink: 3;
+/* Bootstrap */
+.container  {
+    width: 100%;  
+    margin: 4vh 0 0 8vh;      
 }
-
-/* Nosotros */
-.nosotros {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.container .image {
+    width: 100%;        
 }
-.nosotros article {
-    display: flex; 
-    margin: 2em 3em 2em 3em;
+section.pts .row-cols-xl-3 {
+    flex: 1 1 auto;
+    width: 115%;
 }
-.nosotros div {
-    flex-grow: 1;
-    margin: 0%;
-    padding: 0%;
-    width: 5%;
+section.fts .row-cols-xl-2 {
+    flex: 1 1 auto;
+    width: 115%;
 }
-.nosotros img {
-    width: 100%;
-    margin: 0 1em 2em -1em;
+section.fts .row-cols-xl-2 .fa {
+    font-size: 6em;
+}
+section.fts .row-cols-xl-2 .content {
+    margin-left: 2vh ;
+}
+.navbar {
+    display: none;
 }
 
 /* Version Movil */
-
 @media (min-width: 375px) and (max-width: 767px) {
     .wrapper {
         width: 93%;
@@ -603,6 +466,12 @@ input:focus {
         "main main"
         "main main";
         overflow-x :hidden
+    }
+    .navbar {
+        display: inline-block;
+    }
+    .sidebarNav {
+        display: inline-block;
     }
     .main .inner {
         padding: 0 0 0 2em;
@@ -621,46 +490,32 @@ input:focus {
         margin: 0px 0 2em 0em;
         width: 100%;
     }
-    .features article {
-        align-items: center;
-        display: flex;
-        margin: 0 0 3em 3em;
-        position: relative;
-        width: calc(63.33333% + 4em);
-        display: flex;
-        flex-direction: column;
+    .container  {
+        width: 100%;  
+        margin: 0;      
     }
-    .posts {
-        margin: 0;
-        padding: 0;
-    }
-    .posts article {
-        flex-grow: 0;
-        flex-shrink: 1;
-        margin: 1em 0 1em 1em;
-        width: calc(53.33333% + 4em);
-        display: flex;
-        flex-direction: column;
-    }
-    .nosotros article {
-        display: flex;
-        margin: 1em 0em 1em 0em;
-    }
-    .preguntas {
+    section.fts .row-cols-1 {
         width: 100%;
-        margin: 0 0 0em 0em;
     }
-    .preguntas article {
-        margin: 1em 1em 0 0;
-    }
-    .historia .image {
-        margin: 0px 0 2em 0em;
+    section.pts .row-cols-1 {
         width: 100%;
+    }
+    .clearfix .image {
+        width: 100%;        
+    }
+    .col-md-3 {
+        width: 100%;
+    }
+    .col-md-11 {
+        width: 90%;
+    }
+    section.nosotros .row-cols-xl-4 {
+        flex-direction:column;
+        width: 200%;
     }
 }
 
 /* Version Tablet */
-
 @media (min-width: 768px) and (max-width: 1023px) {
     .wrapper {
         width: 93%;
@@ -669,6 +524,12 @@ input:focus {
         "main main"
         "main main";
         overflow-x :hidden
+    }
+    .navbar {
+        display: inline-block;
+    }
+    .sidebarNav {
+        display: inline-block;
     }
     .main .inner {
         padding: 0 0 0 2em;
@@ -687,41 +548,25 @@ input:focus {
         margin: 0px 0 2em 0em;
         width: 100%;
     }
-    .features article {
-        align-items: center;
-        display: flex;
-        margin: 0 0 3em 3em;
-        position: relative;
-        width: calc(33.33333% + 4em);
-        display: flex;
-        flex-direction: column;
+
+    .container  {
+        width: 100%;  
+        margin: 0;      
     }
-    .posts {
-        margin: 0;
-        padding: 0;
-    }
-    .posts article {
-        flex-grow: 0;
-        flex-shrink: 1;
-        margin: 1em 0 1em 1em;
-        width: calc(53.33333% + 13em);
-        display: flex;
-        flex-direction: column;
-    }
-    .nosotros article {
-        display: flex;
-        margin: 1em 0em 1em 0em;
-        width: 33vh;
-    }
-    .preguntas {
+    .row-cols-1  {
+        flex: 0 0 auto;
         width: 100%;
-        margin: 0 0 0em 0em;
     }
-    .preguntas article {
-        margin: 1em 1em 0 0;
+    .clearfix .image {
+        width: 100%;        
     }
-    .historia .image {
-        margin: 0px 0 2em 0em;
+    .col-md-3 {
+        width: 100%;
+    }
+    section.fts .row-cols-1 {
+        width: 100%;
+    }
+    section.pts .row-cols-1 {
         width: 100%;
     }
 }
