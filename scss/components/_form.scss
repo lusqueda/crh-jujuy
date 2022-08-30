@@ -1,0 +1,20 @@
+/* Form */
+form {
+    font-size: 0.9em;
+    line-height: 2em;
+    margin-top: 0em;
+
+    fieldset{
+        border:3px solid $colorFuenteUno;
+        box-shadow: 0 0 12px $colorFuenteUno;
+        padding: 1.5em  0  0  2em;
+        border-radius: 1em;
+        height: 100%;
+    }    
+}
+
+input:focus {
+    outline: none !important;
+    border:2px solid $colorFuenteUno !important;
+    box-shadow: 0 0 12px $colorFuenteUno !important;
+}

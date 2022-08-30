@@ -1,0 +1,10 @@
+/* Wrapper */
+.wrapper {
+    grid-area: wrapper;
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 100vh; 
+    grid-template-areas:
+    "sidebar main main"
+    "sidebar main main";
+}

@@ -1,0 +1,28 @@
+/* Contact */
+ul.contact {
+    list-style: none;
+    padding: 0; 
+
+    li {
+        text-decoration: none;
+        border-top: solid 1px $colorFuenteCuatro;
+        margin: 1.5em 0 0 0;
+        padding: 2em 0 0 3em;
+        position: relative; 
+       
+        a {
+           color: inherit;
+           padding-left: 0.5em;
+        }
+    }    
+
+    i {
+       color: $colorFuenteUno;
+       font-size: 25px;
+    }
+
+    a {
+       font-size: 17px;
+       font-weight: bold;
+    }
+}    

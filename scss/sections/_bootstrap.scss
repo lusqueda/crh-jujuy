@@ -1,0 +1,25 @@
+/* Bootstrap */
+.container  {
+    width: 100%;  
+    margin: 4vh 0 0 8vh;      
+}
+.container .image {
+    width: 100%;        
+}
+section.pts .row-cols-xl-3 {
+    flex: 1 1 auto;
+    width: 115%;
+}
+section.fts .row-cols-xl-2 {
+    flex: 1 1 auto;
+    width: 115%;
+}
+section.fts .row-cols-xl-2 .fa {
+    font-size: 6em;
+}
+section.fts .row-cols-xl-2 .content {
+    margin-left: 2vh ;
+}
+.navbar {
+    display: none;
+}

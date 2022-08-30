@@ -1,0 +1,12 @@
+/* Image */
+.image {
+     border-radius: 0.375em;
+     border: 0;
+     display: inline-block;
+     position: relative; 
+
+     img {
+       border-radius: 0.375em;
+       display: block; 
+     }  
+}

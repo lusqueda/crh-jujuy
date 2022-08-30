@@ -1,0 +1,21 @@
+/* Banner */
+.banner {
+    padding: 6em 0 4em 0 ;
+    display: flex; 
+
+    h1 {
+        margin-top: -0.125em; 
+    }
+
+    .content {
+        padding-right: 2em;
+        width: 100%; 
+    }
+    .image {
+        width: 100%;
+    
+        img{
+            width: 100%;
+        }
+    }    
+}

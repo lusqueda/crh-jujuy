@@ -1,0 +1,59 @@
+@mixin tablet {
+    /* Version Tablet */
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+          .wrapper {
+              width: 93%;
+              display: grid;
+              grid-template-areas:
+              "main main"
+              "main main";
+              overflow-x :hidden
+          }
+          .navbar {
+              display: inline-block;
+          }
+          .sidebarNav {
+              display: inline-block;
+          }
+          .main .inner {
+              padding: 0 0 0 2em;
+          }
+          .sidebar {
+              display: none;      
+          }
+          .banner .content{
+              width: calc(81.333% + 7em);
+          }
+          .banner {
+              display: flex;
+              flex-direction: column-reverse;
+          }
+          .banner .image {
+              margin: 0px 0 2em 0em;
+              width: 100%;
+          }
+  
+          .container  {
+              width: 100%;  
+              margin: 0;      
+          }
+          .row-cols-1  {
+              flex: 0 0 auto;
+              width: 100%;
+          }
+          .clearfix .image {
+              width: 100%;        
+          }
+          .col-md-3 {
+              width: 100%;
+          }
+          section.fts .row-cols-1 {
+              width: 100%;
+          }
+          section.pts .row-cols-1 {
+              width: 100%;
+          }
+      }
+  }
+
+  @include tablet;

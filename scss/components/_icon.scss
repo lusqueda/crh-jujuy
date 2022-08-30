@@ -1,0 +1,27 @@
+/* Icon */
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative; 
+}
+ul {
+    list-style: disc;
+    margin: 0 0 0.5em 0;
+    padding-left: 1em; 
+
+    li {
+    padding-left: 0.5em; 
+    }
+}
+
+/* Icons */
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0; 
+
+    li {
+        display: inline-block;
+        padding: 0 1em 0 0; 
+    }    
+}

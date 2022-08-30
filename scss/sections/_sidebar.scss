@@ -1,0 +1,70 @@
+
+/* Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: $colorFuenteDos;
+    font-size: 0.9em;
+    position: relative;
+    width: 23em; 
+
+    h2 {
+        font-size: 1.38889em; 
+    }
+
+    & > .inner > * {
+        padding: 2.22222em 0.22222em 0.44444em 2.22222em ;
+        position: relative;
+        width: 20em; 
+    }
+
+    .inner section {
+        text-decoration: none;
+        border-top: solid 2px $colorFuenteCuatro;
+        margin: 1.5em 0 0 0;
+        padding: 1.5em 0 0 3em;
+        position: relative;
+    } 
+
+    .inner .menu {
+        text-decoration: none;
+        border-top: solid 2px $colorFuenteCuatro;
+        margin: 1.5em 0 0 0;
+        padding: 1.5em 0 0 3em;
+        position: relative; 
+    }
+
+    .inner footer {
+        text-decoration: none;
+        border-top: solid 2px $colorFuenteCuatro;
+        margin: 1.5em 0 0 0;
+        padding: 1.5em 0 0 3em;
+        position: relative;  
+    }    
+}  
+
+.logos .alt {
+    color: inherit;
+    font-family: $fuenteUno;
+    size-adjust: 20px; 
+    width: calc(100% + 0em)
+}
+
+/* SidebarNav */
+.sidebarNav {
+    background-color: $colorFuenteDos;
+    font-size: 0.9em;
+    position: relative;
+    width: 23em; 
+
+    h2 {
+        font-size: 1.38889em; 
+    }
+    
+    & > .inner > * {
+        padding: 0.9em 0.22222em 0.22222em 0em ;
+        position: relative;
+        width: 20em; 
+    }    
+}
