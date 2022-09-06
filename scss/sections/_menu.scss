@@ -1,3 +1,12 @@
+@mixin menu {
+    border-bottom: 0;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+    font-size: 1.2em;
+    padding: 0.625em 0; 
+}
+
 /* Menu */
 .menu ul {
     color: $colorFuenteTres;
@@ -9,27 +18,16 @@
     padding: 0;
     text-transform: uppercase; 
 
+    span {
+        @include menu;
+    }
+
     a {
-        border-bottom: 0;
-        color: inherit;
-        cursor: pointer;
-        display: block;
-        font-size: 1.2em;
-        padding: 0.625em 0; 
+        @include menu;
 
         &:hover {
             color: $colorFuenteUno; 
             }
-    }
-
-    span {
-        border-bottom: 0;
-        color: inherit;
-        cursor: pointer;
-        display: block;
-        font-size: 1.2em;
-        padding: 0.625em 0; 
-
     }
 }
 

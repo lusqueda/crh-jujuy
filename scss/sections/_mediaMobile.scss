@@ -1,4 +1,4 @@
-@mixin mobile {
+@mixin mobile($mobile-width,$tablet-width) {
     /* Version Movil */
     @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
         .wrapper {
@@ -57,5 +57,3 @@
         }
     }
 }
-
-@include mobile;

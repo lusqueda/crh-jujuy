@@ -1,3 +1,10 @@
+@mixin inner {
+    text-decoration: none;
+    border-top: solid 2px rgba(210, 215, 217, 0.75);
+    margin: 1.5em 0 0 0;
+    padding: 1.5em 0 0 3em;
+    position: relative; 
+}
 
 /* Sidebar */
 .sidebar {
@@ -20,27 +27,15 @@
     }
 
     .inner section {
-        text-decoration: none;
-        border-top: solid 2px $colorFuenteCuatro;
-        margin: 1.5em 0 0 0;
-        padding: 1.5em 0 0 3em;
-        position: relative;
+        @include inner;
     } 
 
     .inner .menu {
-        text-decoration: none;
-        border-top: solid 2px $colorFuenteCuatro;
-        margin: 1.5em 0 0 0;
-        padding: 1.5em 0 0 3em;
-        position: relative; 
+        @include inner;
     }
 
     .inner footer {
-        text-decoration: none;
-        border-top: solid 2px $colorFuenteCuatro;
-        margin: 1.5em 0 0 0;
-        padding: 1.5em 0 0 3em;
-        position: relative;  
+        @include inner;
     }    
 }  
 

@@ -37,15 +37,15 @@ header {
    
 @each $red in $redes {
     i.fa-#{$red} {
-        -moz-transition: -moz-transform 0.7s ease;
-        -webkit-transition: -webkit-transform 0.7s ease;
-        -ms-transition: -ms-transform 0.7s ease;
-        transition: transform 0.7s ease; 
+        -moz-transition: -moz-transform map-get($redes-time-scale, time);
+        -webkit-transition: -webkit-transform map-get($redes-time-scale, time);
+        -ms-transition: -ms-transform map-get($redes-time-scale, time);
+        transition: transform map-get($redes-time-scale, time); 
         &:hover {
-            -moz-transform: scale(1.400);
-            -webkit-transform: scale(1.400);
-            -ms-transform: scale(1.400);
-            transform: scale(1.400); 
+            -moz-transform: map-get($redes-time-scale, scale);
+            -webkit-transform: map-get($redes-time-scale, scale);
+            -ms-transform: map-get($redes-time-scale, scale);
+            transform: map-get($redes-time-scale, scale); 
         }
     }
 }
