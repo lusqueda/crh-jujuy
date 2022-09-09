@@ -448,10 +448,11 @@ section.fts .row-cols-xl-2 .content {
 /* Version Movil */
 @media (min-width: 375px) and (max-width: 767px) {
   .wrapper {
-    width: 93%;
+    width: 92%;
     display: grid;
-    grid-template-areas: "main main" "main main";
-    overflow-x: hidden; }
+    grid-template-areas: "main main" "main main"; }
+  .main {
+    width: 92%; }
   .navbar {
     display: inline-block; }
   .sidebarNav {
@@ -461,13 +462,17 @@ section.fts .row-cols-xl-2 .content {
   .sidebar {
     display: none; }
   .banner .content {
-    width: calc(65.333% + 4em); }
+    width: calc(65.333% + 6em); }
   .banner {
     display: flex;
     flex-direction: column-reverse; }
   .banner .image {
-    margin: 0px 0 2em 0em;
+    margin: 0 0 2em 0;
     width: 100%; }
+  .banner h1 {
+    font-size: 2.8em; }
+  .flex-row {
+    flex-direction: column !important; }
   .container {
     width: 100%;
     margin: 0; }
