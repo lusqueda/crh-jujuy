@@ -308,7 +308,7 @@ i.fa-instagram {
   background-color: #f5f6f7;
   font-size: 0.9em;
   position: relative;
-  width: 17%; }
+  width: 19%; }
   .sidebar h2 {
     font-size: 1.38889em; }
   .sidebar > .inner > * {
@@ -448,11 +448,11 @@ article {
 
 section.pts .row-cols-xl-3 {
   flex: 1 1 auto;
-  width: 110%; }
+  width: 100%; }
 
 section.fts .row-cols-xl-2 {
   flex: 1 1 auto;
-  width: 110%; }
+  width: 100%; }
 
 section.fts .row-cols-xl-2 .fa {
   font-size: 6em; }
