@@ -2,7 +2,7 @@
     text-decoration: none;
     border-top: solid 2px rgba(210, 215, 217, 0.75);
     margin: 1.5em 0 0 0;
-    padding: 1.5em 0 0 3em;
+    padding: 1em 0 0 1.5em;
     position: relative; 
 }
 
@@ -14,7 +14,7 @@
     background-color: $colorFuenteDos;
     font-size: 0.9em;
     position: relative;
-    width: 23em; 
+    width: 17%; 
 
     h2 {
         font-size: 1.38889em; 
@@ -51,7 +51,7 @@
     background-color: $colorFuenteDos;
     font-size: 0.9em;
     position: relative;
-    width: 23em; 
+    width: 100%; 
 
     h2 {
         font-size: 1.38889em; 
@@ -62,7 +62,20 @@
         position: relative;
         width: 20em; 
     } 
+    
     p {
        text-transform: lowercase; 
-    }   
+    } 
+
+    .inner section {
+        @include inner;
+    } 
+
+    .inner .menu {
+        @include inner;
+    }
+
+    .inner footer {
+        @include inner;
+    }    
 }

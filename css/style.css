@@ -82,7 +82,7 @@ h1 {
   line-height: 1.3; }
 
 h2 {
-  font-size: 1.75em; }
+  font-size: 1.50em; }
 
 h3 {
   font-size: 1.25em; }
@@ -219,7 +219,7 @@ input:focus {
   .main .inner {
     padding: 0 5em 0.1em 5em;
     margin: 0;
-    max-width: 140em; }
+    max-width: 100%; }
     .main .inner section {
       padding: 3em 0 3em 0;
       border-top: solid 2px rgba(210, 215, 217, 0.75); }
@@ -308,7 +308,7 @@ i.fa-instagram {
   background-color: #f5f6f7;
   font-size: 0.9em;
   position: relative;
-  width: 23em; }
+  width: 17%; }
   .sidebar h2 {
     font-size: 1.38889em; }
   .sidebar > .inner > * {
@@ -319,19 +319,19 @@ i.fa-instagram {
     text-decoration: none;
     border-top: solid 2px rgba(210, 215, 217, 0.75);
     margin: 1.5em 0 0 0;
-    padding: 1.5em 0 0 3em;
+    padding: 1em 0 0 1.5em;
     position: relative; }
   .sidebar .inner .menu {
     text-decoration: none;
     border-top: solid 2px rgba(210, 215, 217, 0.75);
     margin: 1.5em 0 0 0;
-    padding: 1.5em 0 0 3em;
+    padding: 1em 0 0 1.5em;
     position: relative; }
   .sidebar .inner footer {
     text-decoration: none;
     border-top: solid 2px rgba(210, 215, 217, 0.75);
     margin: 1.5em 0 0 0;
-    padding: 1.5em 0 0 3em;
+    padding: 1em 0 0 1.5em;
     position: relative; }
 
 .logos .alt {
@@ -345,7 +345,7 @@ i.fa-instagram {
   background-color: #f5f6f7;
   font-size: 0.9em;
   position: relative;
-  width: 23em; }
+  width: 100%; }
   .sidebarNav h2 {
     font-size: 1.38889em; }
   .sidebarNav > .inner > * {
@@ -354,6 +354,24 @@ i.fa-instagram {
     width: 20em; }
   .sidebarNav p {
     text-transform: lowercase; }
+  .sidebarNav .inner section {
+    text-decoration: none;
+    border-top: solid 2px rgba(210, 215, 217, 0.75);
+    margin: 1.5em 0 0 0;
+    padding: 1em 0 0 1.5em;
+    position: relative; }
+  .sidebarNav .inner .menu {
+    text-decoration: none;
+    border-top: solid 2px rgba(210, 215, 217, 0.75);
+    margin: 1.5em 0 0 0;
+    padding: 1em 0 0 1.5em;
+    position: relative; }
+  .sidebarNav .inner footer {
+    text-decoration: none;
+    border-top: solid 2px rgba(210, 215, 217, 0.75);
+    margin: 1.5em 0 0 0;
+    padding: 1em 0 0 1.5em;
+    position: relative; }
 
 /* Menu */
 .menu ul {
@@ -430,11 +448,11 @@ article {
 
 section.pts .row-cols-xl-3 {
   flex: 1 1 auto;
-  width: 115%; }
+  width: 110%; }
 
 section.fts .row-cols-xl-2 {
   flex: 1 1 auto;
-  width: 115%; }
+  width: 110%; }
 
 section.fts .row-cols-xl-2 .fa {
   font-size: 6em; }
