@@ -225,33 +225,19 @@ input:focus {
       border-top: solid 2px rgba(210, 215, 217, 0.75); }
 
 /* Header */
-.header {
+header {
   border-bottom: solid 5px #f56a6a;
   padding: 5em 0 0 0;
   position: relative;
   margin-bottom: 0; }
-  .header .logo {
+  header .logo {
     color: inherit;
     font-family: "Roboto Slab", serif;
     font-size: 1.125em; }
-  .header .icons {
+  header .icons {
     text-align: right; }
-    .header .icons i {
+    header .icons i {
       color: #f56a6a; }
-
-header p {
-  font-family: "Roboto Slab", serif;
-  font-size: 1em;
-  font-weight: 400;
-  letter-spacing: 0.075em;
-  margin-top: -0.5em;
-  text-transform: uppercase; }
-
-header.major {
-  border-bottom: solid 3px #f56a6a;
-  display: inline-block;
-  margin: 0 0 2em 0;
-  padding: 0 0.75em 0.5em 0; }
 
 i.fa-twitter {
   -moz-transition: -moz-transform 0.7s ease;
@@ -295,6 +281,13 @@ i.fa-instagram {
   .banner .content {
     padding-right: 2em;
     width: 100%; }
+    .banner .content div p {
+      font-family: "Roboto Slab", serif;
+      font-size: 1em;
+      font-weight: 400;
+      letter-spacing: 0.075em;
+      margin-top: -0.5em;
+      text-transform: uppercase; }
   .banner .image {
     width: 100%; }
     .banner .image img {
@@ -314,7 +307,7 @@ i.fa-instagram {
   .sidebar > .inner > * {
     padding: 2.22222em 0.22222em 0.44444em 2.22222em;
     position: relative;
-    width: 20em; }
+    width: 95%; }
   .sidebar .inner section {
     text-decoration: none;
     border-top: solid 2px rgba(210, 215, 217, 0.75);
@@ -405,6 +398,12 @@ i.fa-instagram {
   margin: 0.5em 0 0 0;
   padding: 0.5em 0 0 0; }
 
+.menu .major {
+  border-bottom: solid 3px #f56a6a;
+  display: inline-block;
+  margin: 0 0 2em 0;
+  padding: 0 0.75em 0.5em 0; }
+
 /* Contact */
 ul.contact {
   list-style: none;
@@ -424,6 +423,12 @@ ul.contact {
   ul.contact a {
     font-size: 17px;
     font-weight: bold; }
+
+section .major {
+  border-bottom: solid 3px #f56a6a;
+  display: inline-block;
+  margin: 0 0 2em 0;
+  padding: 0 0.75em 0.5em 0; }
 
 /* Footer */
 .footer .copyright {

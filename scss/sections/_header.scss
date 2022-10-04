@@ -1,5 +1,5 @@
 /* Header */
-.header {
+header {
     border-bottom: solid 5px $colorFuenteUno;
     padding: 5em 0 0 0;
     position: relative;
@@ -16,23 +16,6 @@
           color: $colorFuenteUno;
          }
     }   
-}
-
-header {   
-    p {
-        font-family: $fuenteUno;
-        font-size: 1em;
-        font-weight: 400;
-        letter-spacing: 0.075em;
-        margin-top: -0.5em;
-        text-transform: uppercase; 
-    }
-    &.major {
-        border-bottom: solid 3px $colorFuenteUno;
-        display: inline-block;
-        margin: 0 0 2em 0;
-        padding: 0 0.75em 0.5em 0; 
-    }
 }
    
 @each $red in $redes {

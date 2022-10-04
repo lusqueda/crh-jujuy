@@ -26,3 +26,10 @@ ul.contact {
        font-weight: bold;
     }
 }    
+
+section .major { 
+   border-bottom: solid 3px $colorFuenteUno;
+   display: inline-block;
+   margin: 0 0 2em 0;
+   padding: 0 0.75em 0.5em 0; 
+ }   

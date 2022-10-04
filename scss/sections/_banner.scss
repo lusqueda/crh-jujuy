@@ -10,7 +10,17 @@
     .content {
         padding-right: 2em;
         width: 100%; 
+
+        div p {
+            font-family: $fuenteUno;
+            font-size: 1em;
+            font-weight: 400;
+            letter-spacing: 0.075em;
+            margin-top: -0.5em;
+            text-transform: uppercase; 
+        }
     }
+    
     .image {
         width: 100%;
     
